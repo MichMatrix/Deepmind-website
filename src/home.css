@@ -1,7 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 * {
   box-sizing: border-box;
 }
+
 html {
   line-height: 1.8;
   font-size: 13px;
@@ -15,10 +18,66 @@ h1,h2,h3,h4,h5,h6 {
   letter-spacing: .2em;
 }
 
+p {
+  font-size: 1.3rem;
+}
+
+/*nav-bar*/
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.menu li {
+  width: 125px;
+  height: 50px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+}
+
+.menu li a {
+  font-size: 22px;
+  color: #4fd9bd;
+  text-decoration: none;
+  transition: all 0.45s;
+}
+
+.menu li:hover {
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0aD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGltZT0iMTAiIGQ9Ik0wLDQ3LjU4NWMwLDAsOTcuNSwwLDEzMCwwCgljMTMuNzUsMCwyOC43NC0zOC43NzgsNDYuMTY4LTE5LjQxNkMxOTIuNjY5LDQ2LjUsMjQzLjYwMyw0Ny41ODUsMjYwLDQ3LjU4NWMzMS44MjEsMCwxMzAsMCwxMzAsMCwwIi8+Cjwvc3ZnPgo=");
+  animation: line 1s;
+}
+
+.menu li:hover a {
+  color: #4fd9bd;
+}
+
+.menu li:not(:last-child) {
+  margin-right: 30px;
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+.nav-bar{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*end nav-bar*/
+
 .panel {
   min-height: 90vh;
   margin: 20px;
-  background: url(https://unsplash.it/g/900/900) no-repeat 50% 50%;
+  background: url(https://images.unsplash.com/39/lIZrwvbeRuuzqOoWJUEn_Photoaday_CSD%20%281%20of%201%29-5.jpg?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat 50% 50%;
   background-size: cover;
   background-attachment: fixed;
   display: flex;
@@ -40,10 +99,10 @@ h1,h2,h3,h4,h5,h6 {
   }}
 
 .content {
-  max-width: 400px;
+  max-width: 510px;
   text-align: center;
   padding: 2em;
-  background: rgba(#000,.8);
+  background: #47958af2;
   border: 1px dashed #888;
   box-shadow: 0 0 0 10px rgba(#000,.8);
   color: #fff;
@@ -57,6 +116,17 @@ h1,h2,h3,h4,h5,h6 {
     padding-bottom: 1em;
     border-bottom: 1px dashed #888;
   }
+}
+
+.first-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-deepminds {
+  width: 15vh;
+  display: flex;
+  padding-left: 10px;
 }
 
 /*team section style*/
@@ -101,6 +171,7 @@ h1,h2,h3,h4,h5,h6 {
     display:flex;
     flex-direction:row;
     align-items:center;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 2.5rem;
     padding: 1rem 0 2.5rem;
@@ -116,15 +187,19 @@ h1,h2,h3,h4,h5,h6 {
     align-items: center;
     flex-direction: column;
     padding: 1.7rem 1.6rem;
-    background: rgba(0, 0, 0, 0.07);
+    background: rgb(200 245 245 / 74%);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     transition: all 265ms ease-out;
+    -webkit-transition: all 265ms ease-out;
+    -moz-transition: all 265ms ease-out;
+    -ms-transition: all 265ms ease-out;
+    -o-transition: all 265ms ease-out;
 }
 
 .member:hover {
     transform: translateY(-5px) scale(1.05);
-    background: rgba(0, 0, 0, 0.15);
+    background: rgba(127, 229, 229, 0.665);
     transition: all 265ms ease-out;
 }
 
@@ -165,17 +240,14 @@ h1,h2,h3,h4,h5,h6 {
 
 /*github icon*/
 .github {
-    background-color: black;
-}
-
-/*twitter icon*/
-.twitter {
-    background-color:#2196F3;
+  background-color: rgb(0 0 0);
+  color: white;
 }
 
 /*linkedin icon*/
 .linkedin {
-    background-color:#0e63a7;
+  background-color: #0079f5;
+  color: #ffffffdb;
 }
 
 .social-icons li {
