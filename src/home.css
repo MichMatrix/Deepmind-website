@@ -139,29 +139,13 @@ p {
     padding: 0px 30px;
     justify-content: center;
 }
-
-.about-chuckster {
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:center;
-    padding: 0 40px 30px;
-  
-}
-
-.about-chuckster p{
-    display:flex;
-    justify-content: center;
-    align-items:center;
-}
-
-#teamSection h2 {
-    font-size: 25px;
+#team h2 {
+    font-size: 20px;
     font-weight: 700;
     padding-bottom:8px;
 }
 
-#teamSection h4 {
+#team h4 {
     font-size: 20px;
     font-weight: 500;
     display: flex;
@@ -187,7 +171,7 @@ p {
     align-items: center;
     flex-direction: column;
     padding: 1.7rem 1.6rem;
-    background: rgb(200 245 245 / 74%);
+    background: #62cacbf2;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 20px;
     transition: all 265ms ease-out;
