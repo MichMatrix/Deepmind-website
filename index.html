@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deepminds</title>
-    <link rel="stylesheet" href="./src/home.css">
+    <link rel="stylesheet" href="./src/style/home.css">
 </head>
 <body>
   <nav>
     <div class="nav-bar">
       <img class="logo-deepminds" src="./src/img/dm-logo.png" alt="deep-minds">
+      <div class="toggle-btn" onclick="toggleMenu()">☰</div>
       <ul class="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#web-scraping">Scraping</a></li>
@@ -17,6 +18,7 @@
         <li><a href="#investimento">Investimento</a></li>
         <li><a href="#team">Equipe</a></li>
       </ul>
+      <div class="btn"><a href="./src/login.html" >Login</a></div>
     </div>
   </nav>
   <main>
@@ -45,6 +47,14 @@
           <div class="content">
             <h2>Chatbot Integrado ao Slack</h2>
             <p>A solução é um chatbot integrado ao Slack, uma plataforma corporativa amplamente adotada. Este chatbot permite que os funcionários expressem seus sentimentos, fornecendo feedbacks de maneira rápida e fácil diretamente na plataforma que já faz parte do seu ambiente de trabalho. Além disso, oferece interações em tempo real, promovendo uma comunicação mais eficaz e melhorando a experiência geral dos colaboradores.</p>
+          </div>
+        </div>
+
+        <div id="chatbot" class="panel">
+          <div class="content">
+            <img class=".img-plataform" src="./src/img/plataform.png" alt="">
+            <h2>Plataform SSO (Sigle Sign On)</h2>
+            <p>A implementação de uma plataforma Single Sign-On (SSO) para o programar o Chatbot e Web Scraping além de outros benefícios, incluindo: Facilidade de Uso, Segurança Reforçada, Integração Transparente, Relatórios e Auditoria </p>
           </div>
         </div>
         
@@ -103,5 +113,11 @@
   <footer>
     <p>  </p>
   </footer>
+  <script>
+    function toggleMenu() {
+      var menu = document.querySelector('.menu');
+      menu.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
