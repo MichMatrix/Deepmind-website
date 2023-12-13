@@ -388,7 +388,8 @@ nav .btn:nth-child(1)::after {
   .menu {
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
   }
 
   .menu.active {
@@ -398,5 +399,14 @@ nav .btn:nth-child(1)::after {
   .toggle-btn {
     display: block;
     cursor: pointer;
+    color: white;
+    font-size: 2.5rem;
+  }
+  .logo-deepminds {
+    width: 8rem;
+    height: 5rem;
+  }
+  .active {
+    padding-bottom: 20px;
   }
 }
